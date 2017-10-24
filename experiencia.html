@@ -15,8 +15,10 @@
     </header>
 
     <nav>
-      <a href="Index.html">Inicio</a>
-      <a href="educacion.html">Educacion</a>
+      <ul>
+        <li><a href="educacion.html">Educacion</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
     </nav>
 
     <section>
@@ -25,8 +27,8 @@
         <thead>
           <tr>
             <td>Año</td>
-            <td>Institución</td>
-            <td>Lugar</td>
+            <td><center>Institución</center></td>
+            <td><center>Lugar</center></td>
             <td>¿Culminó?</td>
           </tr>
         </thead>
@@ -52,6 +54,7 @@
           <tr>
         </tbody>
       </table>
+      <p>
       <form autocomplete="on" name="Estudios">
         <fieldset>
           <legend>Agregar Estudios</legend>
@@ -86,11 +89,16 @@
             <option>2016</option>
             <option>2017</option>
           </select>
-
-
+          <p><label for="institucuion"><strong>Institucion: </strong></label>
+          <input type="text" name="txt_institucion" required>
+          <p><label for="lugar"><strong>Lugar: </strong></label>
+          <textarea name="txt_lugar" rows="2" cols="80"></textarea>
+          <p><label for="culmino"><strong>¿Culmino?<strong></label>
+            <input type="radio" name="culmino" value="si">SI
+            <input type="radio" name="culmino" value="no">NO
+          <p><input type="submit" name="Enviar">
 
         </fieldset>
-
       </form>
     </section>
 
